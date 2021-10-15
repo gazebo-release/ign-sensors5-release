@@ -7,17 +7,17 @@ Build-Depends: cmake,
                doxygen,
                pkg-config,
                debhelper (>= 9),
-               libignition-cmake2-dev,
+               libignition-cmake2-dev (>= 2.8.0),
                libignition-common4-events-dev,
                libignition-common4-profiler-dev,
                libignition-math6-dev (>= 6.6.0),
-               libignition-msgs7-dev,
+               libignition-msgs7-dev (>= 7.2.0),
                libignition-plugin-dev,
                libignition-rendering5-ogre1-dev,
                libignition-rendering5-ogre2-dev,
                libignition-transport10-core-dev,
                libignition-tools-dev,
-               libsdformat11-dev
+               libsdformat11-dev (>= 11.3.0)
 Vcs-Browser: https://github.com/ignition-release/ign-sensors5-release
 Vcs-Git: https://github.com/ignition-release/ign-sensors5-release
 Homepage: http://ignitionrobotics.org/
@@ -25,16 +25,16 @@ Homepage: http://ignitionrobotics.org/
 Package: libignition-sensors5-core-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
-         libignition-msgs7-dev,
+         libignition-msgs7-dev (>= 7.2.0),
          libignition-plugin-dev,
          libignition-rendering5-ogre1-dev,
          libignition-rendering5-ogre2-dev,
          libignition-transport10-core-dev,
          libignition-tools-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -55,10 +55,10 @@ Description: Ignition sensors2 classes and functions for robot apps - Shared lib
 Package: libignition-sensors5-air-pressure-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-air-pressure (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -83,10 +83,10 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib air-pr
 Package: libignition-sensors5-altimeter-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-altimeter (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -112,13 +112,13 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib altime
 Package: libignition-sensors5-camera-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
-         libignition-msgs7-dev,
+         libignition-msgs7-dev (>= 7.2.0),
          libignition-transport10-core-dev,
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -143,14 +143,14 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib Camera
 Package: libignition-sensors5-depth-camera-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
-         libignition-msgs7-dev,
+         libignition-msgs7-dev (>= 7.2.0),
          libignition-transport10-core-dev,
          libignition-sensors5-core-dev,
          libignition-sensors5-camera-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-depth-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -174,11 +174,11 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib depth-
 Package: libignition-sensors5-imu-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-imu (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -204,13 +204,13 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib imu
 Package: libignition-sensors5-lidar-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
-         libignition-msgs7-dev,
+         libignition-msgs7-dev (>= 7.2.0),
          libignition-transport10-core-dev,
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-lidar (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -235,14 +235,14 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib lidar
 Package: libignition-sensors5-gpu-lidar-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
-         libignition-msgs7-dev,
+         libignition-msgs7-dev (>= 7.2.0),
          libignition-transport10-core-dev,
          libignition-sensors5-core-dev,
          libignition-sensors5-lidar-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-gpu-lidar (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -267,13 +267,13 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib gpu-li
 Package: libignition-sensors5-logical-camera-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
-         libignition-msgs7-dev,
+         libignition-msgs7-dev (>= 7.2.0),
          libignition-transport10-core-dev,
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-logical-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -298,11 +298,11 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib logica
 Package: libignition-sensors5-magnetometer-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-magnetometer (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -327,11 +327,11 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib magnet
 Package: libignition-sensors5-rendering-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-rendering (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -356,10 +356,10 @@ Description: Ignition sensors2 classes and functions for robot apps - Lib render
 Package: libignition-sensors5-rgbd-camera-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
-         libignition-msgs7-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
+         libignition-msgs7-dev (>= 7.2.0),
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-rgbd-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -384,13 +384,13 @@ Description: Ignition Sensors classes and functions for robot apps - Lib rgbd-ca
 Package: libignition-sensors5-thermal-camera-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake2-dev (>= 2.8.0),
          libignition-common4-events-dev,
          libignition-math6-dev (>= 6.6.0),
-         libignition-msgs7-dev,
+         libignition-msgs7-dev (>= 7.2.0),
          libignition-transport10-core-dev,
          libignition-sensors5-core-dev,
-         libsdformat11-dev,
+         libsdformat11-dev (>= 11.3.0),
          libignition-sensors5-thermal-camera (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
